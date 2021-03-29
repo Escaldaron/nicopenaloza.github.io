@@ -1,0 +1,170 @@
+:root {
+    --colorDark: rgba(173, 173, 173, 0.26);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+header {
+    display: flex;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+nav {
+    display: flex;
+    background-color: rgba(196, 196, 196, 0.699);
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.11);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.Tittle {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.profilePhotoImg{
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.479);
+}
+
+.spacer {
+    width: 20rem;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.container-end {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.card {
+    display: block;
+    background-color: rgba(196, 196, 196, 0.699);
+    width: 30%;
+    height: 40rem;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.267);
+    min-width: 340px;
+    max-width: 450px;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+.lightDark {
+    padding: 10px;
+    background-color: var(--colorDark);
+}
+
+.w-m {
+    width: 88%;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.m-2 {
+    margin-left: 20px;
+}
+
+.Title-Name{
+    background-color: var(--colorDark);
+    width: 12rem;
+    padding: 10px;
+}
+
+.generateButton {
+    background-color: rgb(88, 141, 88);
+    text-decoration: none;
+    border: 0;
+    box-shadow: 0 0 20px whitesmoke;
+    border-radius: 20px;
+    width: 12rem;
+    height: 3rem;
+    margin-top: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+.generateButton:hover{
+    background-color: rgb(131, 167, 131);
+}
+
+.generateButton:active{
+    background-color: rgb(47, 78, 47);
+}
+
+.content {
+    height: 80%;
+}
+
+.info-text {
+    margin: 5px;
+    font-style: normal;
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 400px;
+    margin-bottom: 0;
+    background-color: rgb(27, 27, 32);
+    min-height: 230px;
+    height: fit-content;
+}
+
+.nameAndContact{
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.thumbnail-a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.thumbnail-a:visited {
+    text-decoration: none;
+}
+
+.ig {
+    width: 30px;
+    opacity: 50%;
+    margin-right: 20px;
+}
