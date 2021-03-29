@@ -2,7 +2,6 @@ const generateNew = () => {
     fetch('https://randomuser.me/api/')
     .then( res => res.json() )
     .then( json => {
-        console.log(json.results[0]);
         const persona = json.results[0];
         const profilePhoto = document.getElementById("photo");
         const profileName = document.getElementById("name");
@@ -18,6 +17,8 @@ const generateNew = () => {
         const age = `${persona.dob.age}`;
         const country = `${persona.location.country}`;
         const coords = persona.location.coordinates;
+        let birth = persona.dob.date.split('T');
+        birth = birth[0];
 
         profilePhoto.innerHTML = `<img class ="profilePhotoImg" src="${img}"/>`;
         profileName.innerHTML = `<h2 class="Title-Name t-center rounded">${name}</h2>`;
@@ -29,6 +30,7 @@ const generateNew = () => {
         profileInfo.innerHTML += `<p class="info-text m-2">Nationality: ${nat} </p>`;
         profileInfo.innerHTML += `<p class="info-text m-2">Phone: ${phone} </p>`;
         profileInfo.innerHTML += `<p class="info-text m-2">Age: ${age} </p>`;
+        profileInfo.innerHTML += `<p class="info-text m-2">Birthday: ${birth} </p>`;
     
     })
 }
